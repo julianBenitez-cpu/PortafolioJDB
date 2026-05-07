@@ -1,0 +1,54 @@
+.about-card {
+    max-width: var(--max-width);
+    margin: 20px auto;
+    background: var(--bg-card);
+    border: 1px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-header {
+    padding: 40px 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #00d4ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+
+}
+
+.intro {
+    color: #fff;
+}
+
+.tabs-nav {
+    display: flex;
+    background: #252525;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #00d4ff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Clase de Angular activa */
+.active-tab {
+    color: var(--accent) !important;
+    border-bottom: 3px solid var(--accent);
+    background: rgba(0, 212, 255, 0.05);
+}
+
+.content-wrapper {
+    padding: 40px;
+    background: #1e1e1e;
+}

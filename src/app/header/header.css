@@ -1,0 +1,64 @@
+
+header {
+    background-color: #1a1a1a; 
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.main-header {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #00d4ff;
+}
+
+.skills-preview {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #888;
+    background: #252525;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid #444;
+}
+
+.logo-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo-angular {
+    width: 150px;
+    padding-right: 2rem;
+}
+
+
+.logo-sql {
+    width: 80px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.logo-html {
+    width: 85px;
+}
+
+.logo-js {
+    width: 145px;
+}
+
+.logo-js {
+    width: 145px;
+}
+    

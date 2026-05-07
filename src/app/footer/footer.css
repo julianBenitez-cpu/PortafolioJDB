@@ -1,0 +1,68 @@
+:host {
+    display: block;
+    margin-top: 20px; /* Espacio para que no pegue con el contenido de arriba */
+}
+
+.main-footer {
+    background-color: #1a1a1a;
+    color: #999;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Badge de disponibilidad */
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #252525;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    color: #00d4ff;
+    font-size: 0.9rem;
+}
+
+/* El puntito verde que parpadea */
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #00d4ff;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #00d4ff;
+    animation: pulse 2s infinite;
+}
+
+
+
+@keyframes pulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgb(30, 167, 204); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(40, 167, 69, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
+}
+
+/* Texto de construcción */
+.built-info {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.built-info strong {
+    color: #dd0031; /* Rojo Angular */
+}
+
+/* Copyright */
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 10px;
+}

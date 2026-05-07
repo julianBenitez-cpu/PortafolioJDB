@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-card: #1a1a1a;      /* Fondo de los contenedores */
+    --accent: #00d4ff;       /* Azul neón */
+    --max-width: 950px;      /* Ancho coordinado */
+}
+
+body {
+    background-image: url('/img/fondo-azul.jpg');
+    background-repeat: repeat;
+    min-height: 100vh;
+
+    margin: 0;
+    font-family: sans-serif;
+}

@@ -1,0 +1,50 @@
+.contenedor-contactos {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;              
+    padding: 20px;
+    flex-wrap: wrap;         
+}
+
+.contenedor-contactos a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.github-boton:hover {
+    color: #fff;
+    background: #a60000;
+    border-color: #c90808;
+    box-shadow: 0 0 15px rgba(255, 4, 4, 0.701);
+}
+
+.linkedin-boton:hover {
+    color: #ffffff;
+    background: #0d48d1;
+    border-color: #0012b5;
+    box-shadow: 0 0 15px rgba(16, 88, 243, 0.571);
+}
+
+.instagram-boton:hover {
+    color: #fff;
+    background: #45137a;
+    border-color: #930b34;
+    box-shadow: 0 0 15px rgba(255, 26, 102, 0.693);
+}
+
+.contenedor-contactos a:active {
+    transform: scale(0.95);
+}
