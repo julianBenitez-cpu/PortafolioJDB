@@ -41,11 +41,17 @@ h2 {
     transition: 0.3s;
 }
 
-/* Clase de Angular activa */
 .active-tab {
     color: var(--accent) !important;
     border-bottom: 3px solid var(--accent);
     background: rgba(0, 212, 255, 0.05);
+}
+
+.tab-item:hover {
+    color: #ffffff;
+    background: #0d48d1;
+    border-color: #0012b565;
+    box-shadow: 0 0 15px rgba(16, 88, 243, 0.226);
 }
 
 .content-wrapper {
