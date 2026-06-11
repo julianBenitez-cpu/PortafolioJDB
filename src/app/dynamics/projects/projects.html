@@ -1,0 +1,24 @@
+<section class="projects-container">
+    <div class="projects-header">
+        <h2>Mis Proyectos</h2>
+        <p>Una colección de mis trabajos más recientes y experimentos técnicos, realizados a lo largo de toda mi etapa secundaria.</p>
+    </div>
+
+    <div class="projects-grid">
+
+        @for (project of projects; track $index) 
+        {
+            <a [href]="project.url_github" class="project-card">
+                <div class="project-image">
+                    <img src="/img/gestionp.jpg" alt="Gestión Productos">
+                    <div class="image-overlay">
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Gestión de Productos</h3>
+                    <p>Programa ideado para la gestión del inventario de un almacén, e información de sus compradores. Su objetivo es la facilitación del funcionamiento en sistemas</p>
+                </div>
+            </a>
+        }
+    </div>
+</section>
