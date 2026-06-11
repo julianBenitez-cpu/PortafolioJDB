@@ -1,4 +1,4 @@
-.contenedor-contactos {
+.contacts-container{
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -7,7 +7,7 @@
     flex-wrap: wrap;         
 }
 
-.contenedor-contactos a {
+.contacts-container a {
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 12px;
@@ -24,27 +24,27 @@
     gap: 8px;
 }
 
-.github-boton:hover {
+.github-button:hover {
     color: #fff;
     background: #a60000;
     border-color: #c90808;
     box-shadow: 0 0 15px rgba(255, 4, 4, 0.701);
 }
 
-.linkedin-boton:hover {
+.linkedin-button:hover {
     color: #ffffff;
     background: #0d48d1;
     border-color: #0012b5;
     box-shadow: 0 0 15px rgba(16, 88, 243, 0.571);
 }
 
-.instagram-boton:hover {
+.instagram-button:hover {
     color: #fff;
     background: #45137a;
     border-color: #930b34;
     box-shadow: 0 0 15px rgba(255, 26, 102, 0.693);
 }
 
-.contenedor-contactos a:active {
+.contacts-container a:active {
     transform: scale(0.95);
 }

@@ -10,13 +10,13 @@
         {
             <a [href]="project.url_github" class="project-card">
                 <div class="project-image">
-                    <img src="/img/gestionp.jpg" alt="Gestión Productos">
+                    <img [src]="project.img" [alt]="project.alt_img">
                     <div class="image-overlay">
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Gestión de Productos</h3>
-                    <p>Programa ideado para la gestión del inventario de un almacén, e información de sus compradores. Su objetivo es la facilitación del funcionamiento en sistemas</p>
+                    <h3>{{project.title}}</h3>
+                    <p>{{project.description}}</p>
                 </div>
             </a>
         }

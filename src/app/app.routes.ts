@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
-import { SobreMi } from './dynamics/sobre-mi/sobre-mi';
 import { Projects } from './dynamics/projects/projects';
-import { Contactos } from './dynamics/sobre-mi/contactos/contactos';
-import { Certificaciones } from './dynamics/sobre-mi/certificaciones/certificaciones';
 import { Home } from './statics/home/home';
+import { AboutMe } from './dynamics/about-me/about-me';
+import { Contacts } from './dynamics/about-me/contacts/contacts';
+import { Documents } from './dynamics/about-me/documents/documents';
 
 export const routes: Routes = [
-    {path: "sobre-mi", component:SobreMi,
+    {path: "about-me", component:AboutMe,
         children:[
-            {path:"contactos",component:Contactos},
-            {path:"certificaciones",component:Certificaciones}
+            {path:"contacts",component:Contacts},
+            {path:"documents",component:Documents}
         ]
         
     },
