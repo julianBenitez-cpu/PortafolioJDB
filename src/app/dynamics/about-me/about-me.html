@@ -1,34 +1,25 @@
 <section class="about-card">
     <div class="about-header">
         <h2>Sobre Mi</h2>
-        <p class="intro">Hola, me llamo <strong>Julián</strong>, tengo 18 años y soy estudiante de secundario. Actualmente me encuentro cursando 
-            séptimo año, en la escuela 713, Juán Abdala chayep, dentro de la orientación ETP (la cuál se orienta a un ámbito de programación informática).
-            Actualmente me encuentro preparandome para realizar el exámen de validación internacional de inglés, "FIRST", siendo que ya cuento con 
-            otra certificación del idioma ("PET"), que es un nivel menor al que aspiro este año.
+        <p class="intro">Hola, me llamo <strong>Julián</strong>, tengo 18 años y soy estudiante de secundario. Me encuentro cursando 
+        séptimo año, en la escuela 713, Juán Abdala chayep, dentro de la orientación ETP (la cuál se orienta a un ámbito de programación informática). Actualmente me encuentro preparandome para realizar el exámen de validación internacional de inglés, "FIRST", siendo que ya cuento con otra certificación del idioma ("PET"), que es un nivel menor al que aspiro este año.
         </p>
-        <p class="intro">Considero que mis habilidades como desarrollador no están completamente desarrolladas, pero me considero una persona interesada en aprender
-            acerca del ámbito. Mi fortaleza recide en qué tan confiado esté a la hora de desarrollar un proyecto, de modo que cuando encuentro interés
-            en el trabajo, puedo desarrollarlo de un modo efectivo y centrado, contando con un nivel de creatividad y resolución que se requiere tipicamente
-            en el desarrollo de proyectos.
+        <p class="intro">Considero que mis habilidades como desarrollador no están completamente desarrolladas, pero me considero una persona   interesada en aprender acerca del ámbito. Mi fortaleza recide en qué tan confiado esté a la hora de desarrollar un proyecto, de modo que cuando encuentro interés en el trabajo, puedo desarrollarlo de un modo efectivo y centrado, contando con un nivel de creatividad y resolución que se requiere tipicamente en el desarrollo de proyectos.
         </p>
-        <p class="intro">De igual manera, me encuentro a disposición de aprender a usar nuevas herramientas. Destaco por un interés a la hora de pensar el 
-            funcionamiento de una web de modo creativo (refiriendome al frontend), a la vez que disfruto aprender y trabajar con temas relacionados a las 
-            bases de datos.
+        <p class="intro">De igual manera, me encuentro a disposición de aprender a usar nuevas herramientas. Destaco por un interés a la hora de pensar el funcionamiento de una web de modo creativo (refiriendome al frontend), a la vez que disfruto aprender y trabajar con temas relacionados a las bases de datos.
         </p>
     </div>
 
     <nav class="tabs-nav">
-        <a routerLink="contactos" routerLinkActive="active-tab" class="tab-item">
+        <a routerLink="/about-me/contacts" routerLinkActive="active-tab" class="tab-item">
             Contactos
         </a>
-        <a routerLink="certificaciones" routerLinkActive="active-tab" class="tab-item">
+        <a routerLink="/about-me/documents" routerLinkActive="active-tab" class="tab-item">
             Certificaciones
         </a>
     </nav>
 
     <div class="content-wrapper">
-        <div class="ruta-hija">
-            <router-outlet></router-outlet>
-        </div>
+        <router-outlet></router-outlet>
     </div>
 </section>

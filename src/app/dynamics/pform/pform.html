@@ -1,0 +1,103 @@
+<div class="registration-container">
+  <div class="registration-header">
+    <h2>Cargar proyecto</h2>
+    <p>Completá los datos del proyecto para agregarlo</p>
+  </div>
+
+  <form class="registration-form"
+    [formGroup]="pForm"
+    (ngSubmit)="projectRegistration()">
+
+    <!-- Title -->
+    <div class="form-group">
+      <label for="title">Título</label>
+      <input
+        type="text"
+        id="title"
+        placeholder="Nombre del proyecto"
+        formControlName="title">
+
+      @if (Title?.invalid && Title?.touched) {
+        @if (Title?.hasError("required")) {
+          <div class="text-danger">El título es requerido</div>
+        }
+      }
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+      <label for="description">Descripción</label>
+      <textarea
+        id="description"
+        placeholder="Descripción del proyecto"
+        formControlName="description">
+      </textarea>
+
+      @if (Description?.invalid && Description?.touched) {
+        @if (Description?.hasError("required")) {
+          <div class="text-danger">La descripción es requerida</div>
+        }
+      }
+    </div>
+
+    <!-- GitHub URL -->
+    <div class="form-group">
+      <label for="url_github">URL de GitHub</label>
+      <input
+        type="url"
+        id="url_github"
+        placeholder="https://github.com/usuario/proyecto"
+        formControlName="url_github">
+
+      @if (UrlGithub?.invalid && UrlGithub?.touched) {
+        @if (UrlGithub?.hasError("required")) {
+          <div class="text-danger">La URL de GitHub es requerida</div>
+        }
+
+        @if (UrlGithub?.hasError("pattern")) {
+          <div class="text-danger">La URL de GitHub no es válida</div>
+        }
+      }
+    </div>
+
+    <!-- Image URL -->
+    <div class="form-group">
+      <label for="img">Imagen</label>
+      <input
+        type="url"
+        id="img"
+        placeholder="https://ejemplo.com/imagen.jpg"
+        formControlName="img">
+
+      @if (Img?.invalid && Img?.touched) {
+        @if (Img?.hasError("required")) {
+          <div class="text-danger">La imagen es requerida</div>
+        }
+      }
+    </div>
+
+    <!-- Image Alt -->
+    <div class="form-group">
+      <label for="alt_img">Texto alternativo de la imagen</label>
+      <input
+        type="text"
+        id="alt_img"
+        placeholder="Imagen del proyecto"
+        formControlName="alt_img">
+
+      @if (AltImg?.invalid && AltImg?.touched) {
+        @if (AltImg?.hasError("required")) {
+          <div class="text-danger">
+            El texto alternativo de la imagen es requerido
+          </div>
+        }
+      }
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit-btn">
+      Cargar proyecto
+    </button>
+
+  </form>
+</div>

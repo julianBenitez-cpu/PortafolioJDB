@@ -1,0 +1,69 @@
+<div class="registration-container">
+  <div class="registration-header">
+    <h2>Register</h2>
+    <p>Create your account to get started</p>
+  </div>
+
+  <form class="registration-form"
+  [formGroup]="registerForm"
+  (ngSubmit)="userRegistration()">
+    <!-- Full Name -->
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" 
+      formControlName="name">
+      @if (Name?.invalid && (Name?.touched)){
+      <div class="text-danger"> El nombre es requerido </div>
+      }
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="name@gmail.com"
+      formControlName="email">
+      @if (Email?.invalid && (Email?.touched)) {
+        @if (Email?.hasError("required")) {
+          <div class="text-danger">El email es requerido</div>
+        }
+        @if (Email?.hasError("email")) {
+          <div class="text-danger">El formato del email debe ser inválido</div>
+        }
+      } 
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="••••••••"
+      formControlName="password">
+      @if (Password?.invalid && (Password?.touched)) {
+        @if (Password?.hasError("required")) {
+          <div class="text-danger">La contraseña es requerida</div>
+        }
+        @if (Password?.hasError("minlength")) {
+          <div class="text-danger">La contraseña debe tener 6 o más dígitos</div>
+        }
+      }  
+      
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="••••••••"
+      formControlName="confirmPassword">
+      @if (Passwordconfirmation?.invalid && (Passwordconfirmation?.touched)) {
+        @if (Passwordconfirmation?.hasError("required")) {
+          <div class="text-danger">La verificación de contraseña es requerida</div>
+        }
+        @if (Passwordconfirmation?.hasError("minlength")) {
+          <div class="text-danger">La verificación de contraseña debe tener 6 o más dígitos</div>
+        }
+      }
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
